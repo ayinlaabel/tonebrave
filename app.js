@@ -19,7 +19,7 @@ var usersRouter = require('./routes/users');
 var app = express();
 
 //Starting Database
-mongoose.connect('mongdb://localhost/tonebrave');
+mongoose.connect('mongodb://localhost/tonebrave');
 
 
 let db = mongoose.connection;
