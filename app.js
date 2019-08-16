@@ -8,6 +8,7 @@ const expressValidator = require('express-validator');
 const session = require('express-session');
 const flash = require('connect-flash');
 const mongoose = require('mongoose');
+const config = require('./config/database');
 
 
 
@@ -19,7 +20,7 @@ var usersRouter = require('./routes/users');
 var app = express();
 
 //Starting Database
-mongoose.connect('mongodb://localhost/tonebrave');
+mongoose.connect(config.database);
 
 
 let db = mongoose.connection;
