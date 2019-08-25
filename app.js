@@ -11,7 +11,18 @@ const mongoose = require('mongoose');
 const config = require('./config/database');
 
 
+mongoose.connect(config.database);
 
+const db = mongoose.connection;
+
+db.on('open',  () => {
+    console.log('Connected to Mongodb on Port 27017  Successfully ...');
+});
+
+//Error
+db.once('err',  (err) => {
+    console.log(err);
+});
 
 
 var indexRouter = require('./routes/index');
@@ -19,18 +30,6 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
-//Starting Database
-mongoose.connect(config.database);
-
-
-let db = mongoose.connection;
-
-//Check for Errors and Startup
-db.once('open', () =>{
-  console.log('Mongo Start Successful on 27017...');
-});
-
-db.on('error', (err) => console.log(err));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
