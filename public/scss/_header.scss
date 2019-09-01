@@ -71,6 +71,7 @@
 .classy-nav-container {
     background-color: transparent;
     padding: 0;
+    
 
     .classy-navbar {
         @include transition-duration(500ms);

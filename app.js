@@ -9,6 +9,7 @@ const session = require('express-session');
 const flash = require('connect-flash');
 const mongoose = require('mongoose');
 const config = require('./config/database');
+const passport = require('passport');
 
 
 mongoose.connect(config.database);
@@ -72,6 +73,19 @@ app.use(expressValidator({
       };
   }
 }));
+
+//Passport Config
+require('./config/passport')(passport);
+
+//Passport Middleware
+app.use(passport.initialize());
+app.use(passport.session());
+
+
+app.get('*', function(req, res, next){
+    res.locals.user = req.user || null;
+    next();
+});
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
