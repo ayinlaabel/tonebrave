@@ -6,7 +6,7 @@ block content
         .d-flex.justify-content-center.h-100
             .card
                 .card-header
-                    h3.u-center.card-title Sign Up
+                    h3.u-center.card-title.text-center Sign Up
                 .card-body
                     form(action='/users/register' method='POST')
                         .input-group.form-group
@@ -39,11 +39,11 @@ block content
                             <input type="checkbox">Remember Me
                             </div>
                         .form-group
-                            input.form-control.btn.float-right.btn-primary-1(type='submit', value='Register')
+                            input.form-control.btn.float-right.btn-primary(type='submit', value='Register')
                 .card-header.card-footer
                     .d-flex.justify-content-center.links
                         | Already have an Account?   
-                        a(href='#')  Login
+                        a(href='#') Login
                     //
                         <div class="d-flex justify-content-center">
                         <a href="#">Forgot your password?</a>

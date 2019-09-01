@@ -1,0 +1,493 @@
+extends ./partial/about
+
+block content
+
+    main#main
+        //
+            ==========================
+            About Us Section
+            ============================
+        section#about
+            .container
+                header.section-header
+                    h3 About Us
+                    p
+                        |  <b>Tonebrave</b> is an entertainment  company established with a special focus on artist development, Audio Engineering, Promotions and Artist Management Ancillary  Services, Licensing, Project Providing a professional music and Audio arts to the world through our multifaceted services, Tonebrave features a highly technical production team as well as professional business managers to compliment her artistes ensuring they are excelling  in their craft and their business, so, ARE YOU TALENTED?, have you got what it takes to become a STAR? Then contact the management now.
+                .row.about-cols
+                    .col-md-4.wow.fadeInUp
+                        .about-col
+                            .img
+                                img.img-fluid(src='img/about-mission.jpg', alt='')
+                            .icon
+                                i.ion-ios-speedometer-outline
+                            h2.title
+                                a(href='#') Our Mission
+                            p
+                                | Ensuring that every Artistic creation is at optimum high quality through the production of our sounds.
+                    .col-md-4.wow.fadeInUp(data-wow-delay='0.1s')
+                        .about-col
+                            .img
+                                img.img-fluid(src='img/about-plan.jpg', alt='')
+                            .icon
+                                i.ion-ios-list-outline
+                            h2.title
+                                a(href='#') Our Plan
+                            p
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quaerat eligendi 
+                    .col-md-4.wow.fadeInUp(data-wow-delay='0.2s')
+                        .about-col
+                            .img
+                                img.img-fluid(src='img/about-vision.jpg', alt='')
+                            .icon
+                                i.ion-ios-eye-outline
+                            h2.title
+                                a(href='#') Our Vision
+                            p
+                                | inspiring the world with the uniqueness of our sound through our various artistic projects training.
+        // #about
+        //
+            ==========================
+            Services Section
+            ============================
+        section#services
+            .container
+                header.section-header.wow.fadeInUp
+                    h3 Services
+                    //p
+                        | <b>Tonebrave</b> is the preeminent institute of contemporary music an performing arts and also sound engineering offering diploma and certificate programs at its centers and through the online classes we are committed to train and develop the creative and career potential of the world’s most inspired artists, through whom our commitment to arts education is seen at Tonebrave college, students explore interdisciplinary approaches to music, dance and sound engineering.
+                .row
+                    .col-lg-4.col-md-6.box.wow.bounceInUp(data-wow-duration='1.4s')
+                        .icon
+                            i.ion-ios-analytics-outline
+                        h4.title
+                            a(href='/tonebrave-college') Tonebrave College
+                        p.description
+                            | Tonebrave music and sound collage is the preeminent institute of contemporary music an performing arts and also sound engineering offering diploma and certificate programs...
+                    .col-lg-4.col-md-6.box.wow.bounceInUp(data-wow-duration='1.4s')
+                        .icon
+                            i.ion-ios-bookmarks-outline
+                        h4.title
+                            a(href='') Brave Records
+                        p.description
+                            | The records company with special focus on artiste development and management, Brave Record features a highly technical production team as well as professional business...
+                    .col-lg-4.col-md-6.box.wow.bounceInUp(data-wow-duration='1.4s')
+                        .icon
+                            i.ion-ios-paper-outline
+                        h4.title
+                            a(href='') Tone Cloud
+                        p.description
+                            | The repairs of sound equipment's and installation by our highly esteemed professionals (Technicians). The equipment’s are fixed and serviced...
+                    .col-lg-4.col-md-6.box.wow.bounceInUp(data-wow-delay='0.1s', data-wow-duration='1.4s')
+                        .icon
+                            i.ion-ios-speedometer-outline
+                        h4.title
+                            a(href='') Brave Tutor
+                        p.description
+                            | This body of organization is established to cater for the needs of schools (Primary & Secondary) who are interested in having music programs for their students...
+                    .col-lg-4.col-md-6.box.wow.bounceInUp(data-wow-delay='0.1s', data-wow-duration='1.4s')
+                        .icon
+                            i.ion-ios-barcode-outline
+                        h4.title
+                            a(href='') Nemo Enim
+                        p.description
+                            | At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque
+                    .col-lg-4.col-md-6.box.wow.bounceInUp(data-wow-delay='0.1s', data-wow-duration='1.4s')
+                        .icon
+                            i.ion-ios-people-outline
+                        h4.title
+                            a(href='') Eiusmod Tempor
+                        p.description
+                            | Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi
+        // #services
+        //
+            ==========================
+            Call To Action Section
+            ============================
+        section#call-to-action.wow.fadeIn
+            .container.text-center
+                h3 Call To Action
+                p
+                    | Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                a.cta-btn(href='#') Call To Action
+        // #call-to-action
+        //
+            ==========================
+            Skills Section
+            ============================
+        section#skills
+            .container
+                header.section-header
+                    h3 Our Skills
+                    p
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                .skills-content
+                    .progress
+                        .progress-bar.bg-success(role='progressbar', aria-valuenow='100', aria-valuemin='0', aria-valuemax='100')
+                            span.skill
+                                | Auido Engineering
+                                i.val 100%
+                    .progress
+                        .progress-bar.bg-info(role='progressbar', aria-valuenow='91', aria-valuemin='0', aria-valuemax='100')
+                            span.skill
+                                | Music Production
+                                i.val 91%
+                    .progress
+                        .progress-bar.bg-warning(role='progressbar', aria-valuenow='86', aria-valuemin='0', aria-valuemax='100')
+                            span.skill
+                                | Song Writing % Directing
+                                i.val 86%
+                    .progress
+                        .progress-bar.bg-danger(role='progressbar', aria-valuenow='67', aria-valuemin='0', aria-valuemax='100')
+                            span.skill
+                                | Artist Management
+                                i.val 67%
+        //
+            ==========================
+            Facts Section
+            ============================
+        section#facts.wow.fadeIn
+            .container
+                header.section-header
+                    h3 Facts
+                    p
+                        | We are commited to excellent delivery in all our projects.
+                .row.counters
+                    .col-lg-3.col-6.text-center
+                        span(data-toggle='counter-up') 6
+                        p Arrtists
+                    .col-lg-3.col-6.text-center
+                        span(data-toggle='counter-up') 70
+                        p Music Recorded
+                    .col-lg-3.col-6.text-center
+                        span(data-toggle='counter-up') 1,003
+                        p Hours Of Support
+                    .col-lg-3.col-6.text-center
+                        span(data-toggle='counter-up') 10
+                        p Hard Workers
+                .facts-img
+                    img.img-fluid(src='img/StudioSetUpView.jpg', alt='')
+        // #facts
+        //
+            ==========================
+            Portfolio Section
+            ============================
+        section#portfolio.section-bg
+            .container
+                header.section-header
+                    h3.section-title Our Portfolio
+                .row
+                    .col-lg-12
+                        ul#portfolio-flters
+                            li.filter-active(data-filter='*') All
+                            li(data-filter='.filter-app') Audio
+                            li(data-filter='.filter-card') Gallery
+                            li(data-filter='.filter-web') Artists
+                .row.portfolio-container
+                    .col-lg-4.col-md-6.portfolio-item.filter-app.wow.fadeInUp
+                        .portfolio-wrap
+                            figure
+                                img.img-fluid(src='img/portfolio/app1.jpg', alt='')
+                                a.link-preview(href='img/portfolio/app1.jpg', data-lightbox='portfolio', data-title='App 1', title='Preview')
+                                    i.ion.ion-eye
+                                a.link-details(href='#', title='More Details')
+                                    i.ion.ion-android-open
+                                .portfolio-info
+                                h4
+                                    a(href='#') App 1
+                                p App
+                    .col-lg-4.col-md-6.portfolio-item.filter-web.wow.fadeInUp(data-wow-delay='0.1s')
+                        .portfolio-wrap
+                            figure
+                                img.img-fluid(src='img/portfolio/web3.jpg', alt='')
+                                a.link-preview(href='img/portfolio/web3.jpg', data-lightbox='portfolio', data-title='Web 3', title='Preview')
+                                    i.ion.ion-eye
+                                a.link-details(href='#', title='More Details')
+                                    i.ion.ion-android-open
+                                .portfolio-info
+                                h4
+                                    a(href='#') Web 3
+                                p Web
+                    .col-lg-4.col-md-6.portfolio-item.filter-app.wow.fadeInUp(data-wow-delay='0.2s')
+                        .portfolio-wrap
+                            figure
+                                img.img-fluid(src='img/portfolio/app2.jpg', alt='')
+                                a.link-preview(href='img/portfolio/app2.jpg', data-lightbox='portfolio', data-title='App 2', title='Preview')
+                                    i.ion.ion-eye
+                                a.link-details(href='#', title='More Details')
+                                    i.ion.ion-android-open
+                                .portfolio-info
+                                h4
+                                    a(href='#') App 2
+                                p App
+                    .col-lg-4.col-md-6.portfolio-item.filter-card.wow.fadeInUp
+                        .portfolio-wrap
+                            figure
+                                img.img-fluid(src='img/portfolio/card2.jpg', alt='')
+                                a.link-preview(href='img/portfolio/card2.jpg', data-lightbox='portfolio', data-title='Card 2', title='Preview')
+                                    i.ion.ion-eye
+                                a.link-details(href='#', title='More Details')
+                                    i.ion.ion-android-open
+                                .portfolio-info
+                                h4
+                                    a(href='#') Card 2
+                                p Card
+                    .col-lg-4.col-md-6.portfolio-item.filter-web.wow.fadeInUp(data-wow-delay='0.1s')
+                        .portfolio-wrap
+                            figure
+                                img.img-fluid(src='img/portfolio/web2.jpg', alt='')
+                                a.link-preview(href='img/portfolio/web2.jpg', data-lightbox='portfolio', data-title='Web 2', title='Preview')
+                                    i.ion.ion-eye
+                                a.link-details(href='#', title='More Details')
+                                    i.ion.ion-android-open
+                                .portfolio-info
+                                h4
+                                    a(href='#') Web 2
+                                p Web
+                    .col-lg-4.col-md-6.portfolio-item.filter-app.wow.fadeInUp(data-wow-delay='0.2s')
+                        .portfolio-wrap
+                            figure
+                                img.img-fluid(src='img/portfolio/app3.jpg', alt='')
+                                a.link-preview(href='img/portfolio/app3.jpg', data-lightbox='portfolio', data-title='App 3', title='Preview')
+                                    i.ion.ion-eye
+                                a.link-details(href='#', title='More Details')
+                                    i.ion.ion-android-open
+                                .portfolio-info
+                                h4
+                                    a(href='#') App 3
+                                p App
+                    .col-lg-4.col-md-6.portfolio-item.filter-card.wow.fadeInUp
+                        .portfolio-wrap
+                            figure
+                                img.img-fluid(src='img/portfolio/card1.jpg', alt='')
+                                a.link-preview(href='img/portfolio/card1.jpg', data-lightbox='portfolio', data-title='Card 1', title='Preview')
+                                    i.ion.ion-eye
+                                a.link-details(href='#', title='More Details')
+                                    i.ion.ion-android-open
+                                .portfolio-info
+                                h4
+                                    a(href='#') Card 1
+                                p Card
+                    .col-lg-4.col-md-6.portfolio-item.filter-card.wow.fadeInUp(data-wow-delay='0.1s')
+                        .portfolio-wrap
+                            figure
+                                img.img-fluid(src='img/portfolio/card3.jpg', alt='')
+                                a.link-preview(href='img/portfolio/card3.jpg', data-lightbox='portfolio', data-title='Card 3', title='Preview')
+                                    i.ion.ion-eye
+                                a.link-details(href='#', title='More Details')
+                                    i.ion.ion-android-open
+                                .portfolio-info
+                                h4
+                                    a(href='#') Card 3
+                                p Card
+                    .col-lg-4.col-md-6.portfolio-item.filter-web.wow.fadeInUp(data-wow-delay='0.2s')
+                        .portfolio-wrap
+                            figure
+                                img.img-fluid(src='img/portfolio/web1.jpg', alt='')
+                                a.link-preview(href='img/portfolio/web1.jpg', data-lightbox='portfolio', data-title='Web 1', title='Preview')
+                                    i.ion.ion-eye
+                                a.link-details(href='#', title='More Details')
+                                    i.ion.ion-android-open
+                                .portfolio-info
+                                h4
+                                    a(href='#') Web 1
+                                p Web
+        // #portfolio
+        //
+            ==========================
+            Clients Section
+            ============================
+        section#clients.wow.fadeInUp
+            .container
+                header.section-header
+                    h3 Our Clients
+                .owl-carousel.clients-carousel
+                    img(src='img/clients/client-1.png', alt='')
+                    img(src='img/clients/client-2.png', alt='')
+                    img(src='img/clients/client-3.png', alt='')
+                    img(src='img/clients/client-4.png', alt='')
+                    img(src='img/clients/client-5.png', alt='')
+                    img(src='img/clients/client-6.png', alt='')
+                    img(src='img/clients/client-7.png', alt='')
+                    img(src='img/clients/client-8.png', alt='')
+        // #clients
+        //
+            ==========================
+            Clients Section
+            ============================
+        section#testimonials.section-bg.wow.fadeInUp
+            .container
+                header.section-header
+                    h3 Testimonials
+                .owl-carousel.testimonials-carousel
+                    .testimonial-item
+                        img.testimonial-img(src='img/testimonial-1.jpg', alt='')
+                        h3 Saul Goodman
+                        h4 Ceo &amp; Founder
+                        p
+                            img.quote-sign-left(src='img/quote-sign-left.png', alt='')
+                            | Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                            img.quote-sign-right(src='img/quote-sign-right.png', alt='')
+                    .testimonial-item
+                        img.testimonial-img(src='img/testimonial-2.jpg', alt='')
+                        h3 Sara Wilsson
+                        h4 Designer
+                        p
+                            img.quote-sign-left(src='img/quote-sign-left.png', alt='')
+                            |   Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                            img.quote-sign-right(src='img/quote-sign-right.png', alt='')
+                    .testimonial-item
+                        img.testimonial-img(src='img/testimonial-3.jpg', alt='')
+                        h3 Jena Karlis
+                        h4 Store Owner
+                        p
+                            img.quote-sign-left(src='img/quote-sign-left.png', alt='')
+                            |   Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                            img.quote-sign-right(src='img/quote-sign-right.png', alt='')
+                    .testimonial-item
+                        img.testimonial-img(src='img/testimonial-4.jpg', alt='')
+                        h3 Matt Brandon
+                        h4 Freelancer
+                        p
+                            img.quote-sign-left(src='img/quote-sign-left.png', alt='')
+                            |   Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                            img.quote-sign-right(src='img/quote-sign-right.png', alt='')
+                    .testimonial-item
+                        img.testimonial-img(src='img/testimonial-5.jpg', alt='')
+                        h3 John Larson
+                        h4 Entrepreneur
+                        p
+                            img.quote-sign-left(src='img/quote-sign-left.png', alt='')
+                            |   Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                            img.quote-sign-right(src='img/quote-sign-right.png', alt='')
+        // #testimonials
+        //
+            ==========================
+            Team Section
+            ============================
+        section#team
+            .container
+                .section-header.wow.fadeInUp
+                    h3 Team
+                    p
+                        | Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                .row
+                    .col-lg-3.col-md-6.wow.fadeInUp
+                        .member
+                            img.img-fluid(src='img/team-1.jpg', alt='')
+                            .member-info
+                                .member-info-content
+                                    h4 Walter White
+                                    span Chief Executive Officer
+                                    .social
+                                        a(href='')
+                                            i.fa.fa-twitter
+                                        a(href='')
+                                            i.fa.fa-facebook
+                                        a(href='')
+                                            i.fa.fa-google-plus
+                                        a(href='')
+                                            i.fa.fa-linkedin
+                    .col-lg-3.col-md-6.wow.fadeInUp(data-wow-delay='0.1s')
+                        .member
+                            img.img-fluid(src='img/team-2.jpg', alt='')
+                            .member-info
+                                .member-info-content
+                                    h4 Sarah Jhonson
+                                    span Product Manager
+                                    .social
+                                        a(href='')
+                                            i.fa.fa-twitter
+                                        a(href='')
+                                            i.fa.fa-facebook
+                                        a(href='')
+                                            i.fa.fa-google-plus
+                                        a(href='')
+                                            i.fa.fa-linkedin
+                    .col-lg-3.col-md-6.wow.fadeInUp(data-wow-delay='0.2s')
+                        .member
+                            img.img-fluid(src='img/team-3.jpg', alt='')
+                            .member-info
+                                .member-info-content
+                                    h4 William Anderson
+                                    span CTO
+                                    .social
+                                        a(href='')
+                                            i.fa.fa-twitter
+                                        a(href='')
+                                            i.fa.fa-facebook
+                                        a(href='')
+                                            i.fa.fa-google-plus
+                                        a(href='')
+                                            i.fa.fa-linkedin
+                    .col-lg-3.col-md-6.wow.fadeInUp(data-wow-delay='0.3s')
+                        .member
+                            img.img-fluid(src='img/team-4.jpg', alt='')
+                            .member-info
+                                .member-info-content
+                                    h4 Amanda Jepson
+                                    span Accountant
+                                    .social
+                                        a(href='')
+                                            i.fa.fa-twitter
+                                        a(href='')
+                                            i.fa.fa-facebook
+                                        a(href='')
+                                            i.fa.fa-google-plus
+                                        a(href='')
+                                            i.fa.fa-linkedin
+        // #team
+        //
+            ==========================
+            Contact Section
+            ============================
+        section#contact.section-bg.wow.fadeInUp
+            .container
+                .section-header
+                    h3 Contact Us
+                    p
+                        | Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                .row.contact-info
+                    .col-md-4
+                        .contact-address
+                            i.ion-ios-location-outline
+                            h3 Address
+                            address No 5, Oluwatouin Close, Off Akiode Street, Ojodu Berger, Lagos-Nigeria.
+                    .col-md-4
+                        .contact-phone
+                            i.ion-ios-telephone-outline
+                            h3 Phone Number
+                            p
+                                a(href='tel:+2347082347776') +234 7082 347 776
+                            p
+                                a(href='tel:+2348077285517') +234 8077 285 517
+                    .col-md-4
+                        .contact-email
+                            i.ion-ios-email-outline
+                            h3 Email
+                            p
+                                a(href='mailto:info@example.com') info@tonebrave.com
+                            p
+                                a(href='mailto:info@example.com') tonebrave5@gmail.com
+                            p
+                                a(href='mailto:info@example.com') btonebrave@Officialtonbrave.com
+                .form
+                    #sendmessage Your message has been sent. Thank you!
+                    #errormessage
+                    form.contactForm(action='', method='post', role='form')
+                        .form-row
+                            .form-group.col-md-6
+                                input#name.form-control(type='text', name='name', placeholder='Your Name', data-rule='minlen:4', data-msg='Please enter at least 4 chars')
+                                .validation
+                            .form-group.col-md-6
+                                input#email.form-control(type='email', name='email', placeholder='Your Email', data-rule='email', data-msg='Please enter a valid email')
+                            .validation
+                        .form-group
+                            input#subject.form-control(type='text', name='subject', placeholder='Subject', data-rule='minlen:4', data-msg='Please enter at least 8 chars of subject')
+                            .validation
+                        .form-group
+                            textarea.form-control(name='message', rows='5', data-rule='required', data-msg='Please write something for us', placeholder='Message')
+                            .validation
+                        .text-center
+                            button(type='submit') Send Message
+        // #contact
+
