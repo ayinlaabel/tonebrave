@@ -12,8 +12,11 @@ router.get('/about', function(req, res, next) {
 });
 
 /* GET Tonebrave College  page. */
-router.get('/tonebrave-college', function(req, res, next) {
+router.get('/tonebrave-college',function(req, res, next) {
   res.render('tonebraveCollege');
 });
+
+
+
 
 module.exports = router;

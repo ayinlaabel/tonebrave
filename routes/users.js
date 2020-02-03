@@ -64,6 +64,11 @@ router.post('/register', (req, res)=>{
   }
 });
 
+/* GET Profile page. */
+router.get('/profile', ensureAuthenticated, function(req, res, next) {
+  res.render('profile');
+});
+
 router.get('/login', (req, res) =>{
   res.render('login');
 });
@@ -83,6 +88,17 @@ router.get('/logout', (req, res) => {
   res.redirect('/users/login');
 });
 
+
+
+//Router Authenticated
+function ensureAuthenticated(req, res, next){
+  if (req.isAuthenticated()) {
+    return next();
+  } else {
+    req.flash('danger', 'You are require to login');
+    res.redirect('/users/login');
+  }
+}
 
 
 module.exports = router;

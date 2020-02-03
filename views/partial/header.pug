@@ -163,17 +163,18 @@ header.header-area
                         a(href='./single-podcast.html') - Brave Records
                       li
                         a(href='./show.html') - Tone Cloud
-                    ul.single-mega.cn-col-4
-                      li
-                        a(href='./show.html') - Show
-                      li
-                        a(href='./events.html') - Event
-                      li
-                        a(href='./blog.html') - Blog
-                      li
-                        a(href='./single-blog.html') - Blog Details
-                      li
-                        a(href='./index.html') - Home
+                    if user
+                      ul.single-mega.cn-col-4
+                        li
+                          a(href='/users/profile') - Profile
+                        li
+                          a(href='./events.html') - Event
+                        li
+                          a(href='./blog.html') - Blog
+                        li
+                          a(href='./single-blog.html') - Blog Details
+                        li
+                          a(href='./index.html') - Home
 
                 if user
                   li
@@ -336,4 +337,5 @@ script(src='../js/all.js')
 script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js', integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN', crossorigin='anonymous')
 script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q', crossorigin='anonymous')
 script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl', crossorigin='anonymous')
+script(src="/profile.js")
 

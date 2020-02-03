@@ -183,17 +183,18 @@ header.header-area
                         a(href='./single-podcast.html') - Brave Records
                       li
                         a(href='./show.html') - Tone Cloud
-                    ul.single-mega.cn-col-4
-                      li
-                        a(href='./show.html') - Show
-                      li
-                        a(href='./events.html') - Event
-                      li
-                        a(href='./blog.html') - Blog
-                      li
-                        a(href='./single-blog.html') - Blog Details
-                      li
-                        a(href='./index.html') - Home
+                    if user
+                      ul.single-mega.cn-col-4
+                        li
+                          a(href='./show.html') - Profile
+                        li
+                          a(href='./events.html') - Event
+                        li
+                          a(href='./blog.html') - Blog
+                        li
+                          a(href='./single-blog.html') - Blog Details
+                        li
+                          a(href='./index.html') - Home
 
                 if user
                   li
