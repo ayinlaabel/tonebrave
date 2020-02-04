@@ -14,36 +14,36 @@ block content
                 .profile-card__name #{user.name}
                 .profile-card__txt
                     | Front-end Developer from 
-                    strong Mesopotamia
+                    strong #{user.username}
             .profile-card-loc
                 span.profile-card-loc__icon
                     svg.icon
                         use(xlink:href='#icon-location')
                 span.profile-card-loc__txt
-                    | Istanbul, Turkey
+                    | Lagos, Nigeria
             .profile-card-inf
                 .profile-card-inf__item
                     .profile-card-inf__title 1598
-                    .profile-card-inf__txt Followers
+                    .profile-card-inf__txt Videos
                 .profile-card-inf__item
                     .profile-card-inf__title 65
-                    .profile-card-inf__txt Following
+                    .profile-card-inf__txt Songs
                 .profile-card-inf__item
                     .profile-card-inf__title 123
-                    .profile-card-inf__txt Articles
+                    .profile-card-inf__txt Tracks
                 .profile-card-inf__item
                     .profile-card-inf__title 85
-                    .profile-card-inf__txt Works
+                    .profile-card-inf__txt Albums
             .profile-card-social
-                a.profile-card-social__item.facebook(href='https://www.facebook.com/iaMuhammedErdem', target='_blank' style='color:#fff;')
+                a.profile-card-social__item.facebook(href=user.facebook, target='_blank' style='color:#fff;')
                     span.icon-font
                         svg.icon
                             use(xlink:href='#icon-facebook')
-                a.profile-card-social__item.twitter(href='https://twitter.com/iaMuhammedErdem', target='_blank' style='color:#fff;')
+                a.profile-card-social__item.twitter(href=user.twitter, target='_blank' style='color:#fff;')
                     span.icon-font
                         svg.icon
                             use(xlink:href='#icon-twitter')
-                a.profile-card-social__item.instagram(href='https://www.instagram.com/iamuhammederdem', target='_blank' style='color:#fff;')
+                a.profile-card-social__item.instagram(href=user.instagram, target='_blank' style='color:#fff;')
                     span.icon-font
                         svg.icon
                             use(xlink:href='#icon-instagram')
@@ -64,14 +64,39 @@ block content
                         svg.icon
                             use(xlink:href='#icon-link')
             .profile-card-ctr
-                button.profile-card__button.button--blue.js-message-btn Message
-                button.profile-card__button.button--orange Follow
+                button.profile-card__button.button--blue.js-message-btn Profile
+                button.profile-card__button.button--orange.js-message-btn-social Image
+                //- button.profile-card__button.button--orange.js-message-btn-social Songs
+
             .profile-card-message.js-message
-                form.profile-card-form
-                    .profile-card-form__container
-                        textarea(placeholder='Say something...')
+                form.profile-card-form(method='POST', action='/users/profile/edit/'+user._id)
+                    .row
+                        .col-md-6
+                            .profile-card-form__container
+                                input(type="text" placeholder="Name" name='name' value=user.name)
+                            .profile-card-form__container
+                                input(placeholder='email' name='email' value=user.email)
+                            .profile-card-form__container
+                                input(placeholder='username' name='username' value=user.username)
+                        .col-md-6
+                            .profile-card-form__container
+                                input(placeholder='Add Facebook Page' name='facebook', type='url' value=user.facebook)
+                            .profile-card-form__container
+                                input(placeholder='Add Instagram Page' name='instagram' type='url' value=user.instagram)
+                            .profile-card-form__container
+                                input(placeholder='Add Twitter Handle' name='twitter' type='url' value=user.twitter)
                     .profile-card-form__bottom
-                        button.profile-card__button.button--blue.js-message-close
+                        button.profile-card__button.button--blue
+                            | Send
+                        button.profile-card__button.button--gray.js-message-close
+                            | Cancel
+                .profile-card__overlay.js-message-close
+
+            //- .profile-card-message.js-message
+                form.profile-card-form(method='POST', action='/users/profile/edit/'+user._id)
+                   
+                    .profile-card-form__bottom
+                        button.profile-card__button.button--blue
                             | Send
                         button.profile-card__button.button--gray.js-message-close
                             | Cancel

@@ -1,0 +1,217 @@
+extends ./partial/header
+
+
+block content
+
+    //- // Preloader
+    //- #preloader
+    //-     div
+    //-         .spinner
+    //-             .double-bounce1
+    //-             .double-bounce2
+    //-         span Wait, please...
+    //- // /Preloader
+
+    // Event Welcome Area Start
+    section.event-welcome-area.bg-overlay.bg-img.jarallax(style='background-image: url(img/bg-img/54.jpg);')
+        .container
+            .row.justify-content-center
+                .col-12.col-lg-9
+                    .event-welcome-text.text-center
+                        span Event start on 19 March, 2018
+                        h2 Drop The Colors
+                        p
+                            | Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                        .coming-soon-clock.mt-30.mb-30
+                            #clock
+                            .event-btn-group
+                                a.btn.razo-btn.mt-2.mt-sm-0.btn-2.mx-2(href='#') View Events
+                                a.btn.razo-btn.mt-2.mt-sm-0.mx-2(href='#')
+                                    i.fa.fa-cart
+                                    |  Buy Tickets
+    // Event Welcome Area End
+    // Event Search Area Start
+    .event-search-area.section-padding-80
+        .container
+            .row
+                .col-12
+                    .event-search-content
+                        form.search-form(action='#')
+                            .row.align-items-end
+                                .col-sm-6.col-lg-3
+                                    .form-group
+                                        label(for='event-date') Events from
+                                        input#event-date.form-control(type='date')
+                                        small.form-input-icon
+                                            i.icon_calendar
+                                .col-sm-6.col-lg-3
+                                    .form-group
+                                        label(for='location') Location
+                                        input#location.form-control(type='text', placeholder='11 Rose St, Brooklyn, NY')
+                                        small.form-input-icon
+                                            i.icon_pin_alt
+                                .col-sm-6.col-lg-3
+                                    .form-group
+                                        label(for='search') Search
+                                        input#search.form-control(type='search', placeholder='Keywords')
+                                .col-sm-6.col-lg-3
+                                    .form-group.text-right
+                                        button.btn.razo-btn.w-100(type='submit') Search Event
+    // Event Search Area End
+    // Razo Event Area Start
+    section.razo-events-area.section-padding-0-80
+        .container
+            .row
+                // Single Razo Event Area
+                .col-12
+                    .single-razo-event-area.d-flex.flex-wrap.align-items-center.mb-50.wow.fadeInUp(data-wow-delay='100ms')
+                        // Thumbnail
+                        .event-thumbnail
+                            img(src='img/bg-img/64.jpg', alt='')
+                        // Event Content
+                        .event-content.d-flex.align-items-center
+                            .event-text
+                                h5 Does our economic model need a re-think?
+                                .event-meta
+                                    a.event-date(href='#')
+                                        i.icon_calendar
+                                        |  March 11, 2018
+                                    a.event-time(href='#')
+                                        i.icon_clock_alt
+                                        |  09.00 - 17.00
+                                    a.event-address(href='#')
+                                        i.icon_pin_alt
+                                        |  11 Rose St, Brooklyn, NY
+                                p
+                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                a.btn.read-more-btn(href='#')
+                                    | Read More 
+                                    i.fa.fa-angle-double-right(aria-hidden='true')
+                                // Event Purchase Button
+                            .event-purchase-button
+                                a.btn.razo-btn(href='#')
+                                    i.icon_cart
+                                    |  Buy Tickets
+            // Single Razo Event Area
+            .col-12
+                .single-razo-event-area.d-flex.flex-wrap.align-items-center.mb-50.wow.fadeInUp(data-wow-delay='300ms')
+                    // Thumbnail
+                    .event-thumbnail
+                        img(src='img/bg-img/65.jpg', alt='')
+                    // Event Content
+                    .event-content.d-flex.align-items-center
+                        .event-text
+                            h5 The curious case of the stolen diggers of Manukau
+                            .event-meta
+                                a.event-date(href='#')
+                                    i.icon_calendar
+                                    |  March 11, 2018
+                                a.event-time(href='#')
+                                    i.icon_clock_alt
+                                    |  09.00 - 17.00
+                                a.event-address(href='#')
+                                    i.icon_pin_alt
+                                    |  11 Rose St, Brooklyn, NY
+                            p
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            a.btn.read-more-btn(href='#')
+                                | Read More 
+                                i.fa.fa-angle-double-right(aria-hidden='true')
+                            // Event Purchase Button
+                        .event-purchase-button
+                            a.btn.razo-btn(href='#')
+                                i.icon_cart
+                                |  Buy Tickets
+            // Single Razo Event Area
+            .col-12
+                .single-razo-event-area.d-flex.flex-wrap.align-items-center.mb-50.wow.fadeInUp(data-wow-delay='500ms')
+                    // Thumbnail
+                    .event-thumbnail
+                        img(src='img/bg-img/66.jpg', alt='')
+                    // Event Content
+                    .event-content.d-flex.align-items-center
+                        .event-text
+                            h5 Suicide prevention strategies need more resources
+                            .event-meta
+                                a.event-date(href='#')
+                                    i.icon_calendar
+                                    |  March 11, 2018
+                                a.event-time(href='#')
+                                    i.icon_clock_alt
+                                    |  09.00 - 17.00
+                                a.event-address(href='#')
+                                    i.icon_pin_alt
+                                    |  11 Rose St, Brooklyn, NY
+                                p
+                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                a.btn.read-more-btn(href='#')
+                                    | Read More 
+                                    i.fa.fa-angle-double-right(aria-hidden='true')
+                        // Event Purchase Button
+                        .event-purchase-button
+                        a.btn.razo-btn(href='#')
+                            i.icon_cart
+                            |  Buy Tickets
+            // Single Razo Event Area
+            .col-12
+                .single-razo-event-area.d-flex.flex-wrap.align-items-center.mb-50.wow.fadeInUp(data-wow-delay='700ms')
+                    // Thumbnail
+                    .event-thumbnail
+                        img(src='img/bg-img/67.jpg', alt='')
+                    // Event Content
+                    .event-content.d-flex.align-items-center
+                        .event-text
+                            h5 Christchurch musician Roy on his latest album Suffuse
+                            .event-meta
+                                a.event-date(href='#')
+                                    i.icon_calendar
+                                    |  March 11, 2018
+                                a.event-time(href='#')
+                                    i.icon_clock_alt
+                                    |  09.00 - 17.00
+                                a.event-address(href='#')
+                                    i.icon_pin_alt
+                                    |  11 Rose St, Brooklyn, NY
+                            p
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            a.btn.read-more-btn(href='#')
+                                | Read More 
+                                i.fa.fa-angle-double-right(aria-hidden='true')
+                        // Event Purchase Button
+                        .event-purchase-button
+                            a.btn.razo-btn(href='#')
+                                i.icon_cart
+                                |  Buy Tickets
+            // Single Razo Event Area
+            .col-12
+                .single-razo-event-area.d-flex.flex-wrap.align-items-center.mb-50.wow.fadeInUp(data-wow-delay='900ms')
+                    // Thumbnail
+                    .event-thumbnail
+                        img(src='img/bg-img/68.jpg', alt='')
+                    // Event Content
+                    .event-content.d-flex.align-items-center
+                        .event-text
+                            h5 Pacific new album A Lost Light came to him in a dream
+                            .event-meta
+                                a.event-date(href='#')
+                                    i.icon_calendar
+                                    |  March 11, 2018
+                                a.event-time(href='#')
+                                    i.icon_clock_alt
+                                    |  09.00 - 17.00
+                                a.event-address(href='#')
+                                    i.icon_pin_alt
+                                    |  11 Rose St, Brooklyn, NY
+                            p
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            a.btn.read-more-btn(href='#')
+                                | Read More 
+                                i.fa.fa-angle-double-right(aria-hidden='true')
+                        // Event Purchase Button
+                        .event-purchase-button
+                            a.btn.razo-btn(href='#')
+                                i.icon_cart
+                                |  Buy Tickets
+        .row
+            .col-12.text-center
+                a.btn.razo-btn.mt-30(href='#') Load More

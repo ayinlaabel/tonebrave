@@ -344,10 +344,10 @@ a, a:hover {
     flex-wrap: wrap;
   }
 }
-.profile-card textarea {
+.profile-card input {
   width: 100%;
   resize: none;
-  height: 210px;
+  /* height: 210px; */
   margin-bottom: 20px;
   border: 2px solid #dcdcdc;
   border-radius: 10px;

@@ -13,6 +13,18 @@ let userSchema = mongoose.Schema({
         type: String,
         required: true
     },
+    facebook: {
+        type: String,
+        // required: true
+    },
+    twitter: {
+        type: String,
+        // required: true
+    },
+    instagram: {
+        type: String,
+        // required: true
+    },
     password: {
         type: String,
         required: true

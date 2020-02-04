@@ -69,6 +69,28 @@ router.get('/profile', ensureAuthenticated, function(req, res, next) {
   res.render('profile');
 });
 
+
+/* GET Edit Profile page. */
+router.post('/profile/edit/:id', ensureAuthenticated, function(req, res, next) {
+  const user = {};
+
+  user.name = req.body.name;
+  user.email = req.body.email;
+  user.username = req.body.username;
+  user.facebook = req.body.facebook;
+  user.instagram = req.body.instagram;
+  user.twitter = req.body.twitter;
+
+  let query = {_id:req.params.id}
+
+  User.update(query, user)
+  .then(
+    () => {
+      res.redirect('/users/profile');
+      req.flash('success', 'Profile Updated Successful!!!')
+    }
+  )
+});
 router.get('/login', (req, res) =>{
   res.render('login');
 });
