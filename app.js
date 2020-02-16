@@ -21,7 +21,7 @@ db.on('open',  () => {
 });
 
 //Error
-db.once('err',  (err) => {
+db.once('error',  (err) => {
     console.log(err);
 });
 

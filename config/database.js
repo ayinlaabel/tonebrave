@@ -1,4 +1,4 @@
 module.exports = {
-    database: 'mongodb://localhost:27017/tonebrave',
+    database: 'mongodb+srv://ayinlaabel:kraneabel@test-f9ut8.gcp.mongodb.net/test?retryWrites=true&w=majority',
     secret: 'your secret'
 }
