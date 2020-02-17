@@ -41,8 +41,9 @@ router.post('/event/upcoming-event', function(req, res, next) {
   console.log(eventReg.name.first_name);
   eventReg.save().then(
     () => {
+      req.flash('success', 'Thank you for registering for the event to complete you registeration you will need to pay the sum amount of  three Thousand Naira Only (N3000) to (Bank: Fidelity, Account Name: Michael Udeagha, Account Number: 6551122812)')
       res.redirect('/event')
-      alert('Thank you for registering for the even to complete you registeration you will need to pay three Thousand Naira Only (N3000) to')
+      // alert('Thank you for registering for the even to complete you registeration you will need to pay three Thousand Naira Only (N3000) to');
     }
   ).catch(
     (err) => {
