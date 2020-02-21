@@ -16,6 +16,7 @@ block content
     section.event-welcome-area.bg-overlay.bg-img.jarallax(style='background-image: url(/img/bg-img/54.jpg);')
         .container
             .row.justify-content-center
+                != messages('message', locals)
                 .col-12.col-lg-9
                     .event-welcome-text.text-center
                         span Event start on 19 March, 2018
@@ -33,7 +34,6 @@ block content
     // Event Search Area Start
     .event-search-area.section-padding-80
         .container
-            != messages('message', locals)
             .row
                 .col-12
                     .event-search-content
