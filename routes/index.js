@@ -3,6 +3,8 @@ const sgMail = require('@sendgrid/mail');
 var router = express.Router();
 
 
+
+
 /* BRINGING IN MODELS */
 const EventReg = require('../models/event_registration')
 
@@ -41,7 +43,6 @@ router.post('/event/upcoming-event', function(req, res, next) {
 
 
     // SENDGRID HERE
-    process.env.SENDGRID_API_KEY = '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';
     sgMail.setApiKey(process.env.SENDGRID_API_KEY);
     const msg = {
       to: eventReg.email,
