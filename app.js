@@ -12,7 +12,7 @@ const config = require('./config/database');
 const passport = require('passport');
 
 
-mongoose.connect(config.database);
+mongoose.connect(config.database,  { useNewUrlParser: true} );
 
 const db = mongoose.connection;
 
