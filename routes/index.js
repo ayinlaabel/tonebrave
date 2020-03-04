@@ -19,17 +19,17 @@ router.get('/about', function(req, res, next) {
 });
 
 /* GET Event page. */
-router.get('/event', function(req, res, next) {
+router.get('/events', function(req, res, next) {
   res.render('event');
 });
 
 /* GET Event Registration page. */
-router.get('/event/upcoming-event', function(req, res, next) {
+router.get('/event', function(req, res, next) {
   res.render('eventRegistration');
 });
 
 /* POST Event Registration page. */
-router.post('/event/upcoming-event', function(req, res, next) {
+router.post('/event', function(req, res, next) {
   const eventReg = new EventReg();
 
   eventReg.name.first_name = req.body.first_name;
@@ -80,7 +80,7 @@ router.post('/event/upcoming-event', function(req, res, next) {
   eventReg.save().then(
     () => {
       req.flash('success', `Next Process has been sent to you via ${eventReg.email}`)
-      res.redirect('/event');
+      res.redirect('/events');
       sgMail.send(msg);
     }
   ).catch(
