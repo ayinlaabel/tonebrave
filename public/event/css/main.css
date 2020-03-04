@@ -299,7 +299,9 @@ h6 {
   background: -webkit-linear-gradient(bottom left, #08aeea 0%, #b721ff 100%);
   background: -moz-linear-gradient(bottom left, #08aeea 0%, #b721ff 100%);
   background: -o-linear-gradient(bottom left, #08aeea 0%, #b721ff 100%);
-  background: linear-gradient(to top right, rgba(8, 172, 231, .5) 0%, rgba(183, 33, 255, .5) 100%), url(/event/css/Tonebrave2.jpg);
+  background: linear-gradient(to top right, rgba(8, 172, 231, .5) 0%, rgba(183, 33, 255, .5) 100%), url(/img/2.jpg);
+  background-size: 500px;
+  bo
 }
 
 /* ==========================================================================
