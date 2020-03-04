@@ -39,6 +39,7 @@ router.post('/event', function(req, res, next) {
   eventReg.email = req.body.email;
   eventReg.subject = req.body.subject;
   eventReg.objective = req.body.objective;
+  eventReg.location = req.body.location;
   eventReg.gender = req.body.gender;
 
 
