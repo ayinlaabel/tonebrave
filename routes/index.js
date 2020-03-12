@@ -11,6 +11,7 @@ const EventReg = require('../models/event_registration')
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index');
+  console.log(process.env.accountSid)
 });
 
 /* GET About page. */
